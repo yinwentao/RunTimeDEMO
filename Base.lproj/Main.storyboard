@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yll-W2-Pbb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--runtimeDemo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zl6-7d-dRM">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AZ-Fl-W6U">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rk-Na-57N">
+                                                <rect key="frame" x="85" y="19" width="150" height="30"/>
+                                                <state key="normal" title="获取类的全部成员变量"/>
+                                                <connections>
+                                                    <action selector="function1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2o2-ow-hYI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLR-mK-n13">
+                                                <rect key="frame" x="93" y="57" width="135" height="30"/>
+                                                <state key="normal" title="获取类的全部属性名"/>
+                                                <connections>
+                                                    <action selector="function2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cDD-wj-cLE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRB-eI-O6w">
+                                                <rect key="frame" x="100" y="95" width="120" height="30"/>
+                                                <state key="normal" title="获取类的全部方法"/>
+                                                <connections>
+                                                    <action selector="function3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAi-iS-Q9X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-su-QkT">
+                                                <rect key="frame" x="85" y="133" width="150" height="30"/>
+                                                <state key="normal" title="获取类遵循的全部协议"/>
+                                                <connections>
+                                                    <action selector="function4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzr-1b-szI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsk-kl-1sO">
+                                                <rect key="frame" x="100" y="171" width="120" height="30"/>
+                                                <state key="normal" title="动态改变成员变量"/>
+                                                <connections>
+                                                    <action selector="function5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iHW-KM-dqm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajd-n0-VUN">
+                                                <rect key="frame" x="100" y="209" width="120" height="30"/>
+                                                <state key="normal" title="动态交换类的方法"/>
+                                                <connections>
+                                                    <action selector="function6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIe-f6-e38"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEl-nt-TRA">
+                                                <rect key="frame" x="115" y="247" width="90" height="30"/>
+                                                <state key="normal" title="动态添加方法"/>
+                                                <connections>
+                                                    <action selector="function7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MBO-Jk-7Cj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgX-O3-ch4">
+                                                <rect key="frame" x="69" y="285" width="183" height="30"/>
+                                                <state key="normal" title="动态为Category扩展加属性"/>
+                                                <connections>
+                                                    <action selector="function8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNx-wb-KhJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5M-jG-TOP">
+                                                <rect key="frame" x="98" y="323" width="125" height="30"/>
+                                                <state key="normal" title="更便捷的归档/解档"/>
+                                                <connections>
+                                                    <action selector="function9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pdk-qj-o8b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="504" id="OmV-JD-PeR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0AZ-Fl-W6U" firstAttribute="width" secondItem="Zl6-7d-dRM" secondAttribute="width" id="GCu-bb-HEw"/>
+                                    <constraint firstAttribute="trailing" secondItem="0AZ-Fl-W6U" secondAttribute="trailing" id="JGY-U8-m53"/>
+                                    <constraint firstAttribute="bottom" secondItem="0AZ-Fl-W6U" secondAttribute="bottom" id="Mdx-H5-g74"/>
+                                    <constraint firstItem="0AZ-Fl-W6U" firstAttribute="top" secondItem="Zl6-7d-dRM" secondAttribute="top" id="hJY-IV-bhH"/>
+                                    <constraint firstItem="0AZ-Fl-W6U" firstAttribute="leading" secondItem="Zl6-7d-dRM" secondAttribute="leading" id="k2e-Qy-60L"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zl6-7d-dRM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="G82-Wo-8Tc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zl6-7d-dRM" secondAttribute="bottom" id="Njy-V2-GtL"/>
+                            <constraint firstItem="Zl6-7d-dRM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bTy-SV-r4m"/>
+                            <constraint firstAttribute="trailing" secondItem="Zl6-7d-dRM" secondAttribute="trailing" id="fTK-W3-w17"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="runtimeDemo" id="K8I-r8-Me5"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h4R-Kk-J8c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yll-W2-Pbb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nnp-iv-xHM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VOU-Wi-ivk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5y-X8-lHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="437"/>
+        </scene>
+    </scenes>
+</document>
