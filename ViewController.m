@@ -224,7 +224,7 @@ void fromCityAnswer(id self,SEL _cmd,NSString *str){
     person.native = @"北京";
     
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *path = [NSString stringWithFormat:@"%@/archive",docPath];
+    NSString *path = [NSString stringWithFormat:@"%@/archive.arch",docPath];
     [NSKeyedArchiver archiveRootObject:person toFile:path];
     
     Person *unarchiverPerson = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
